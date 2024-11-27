@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Voar.com - O seu agente de Viagens!</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Logotipo, Entrar/Cadastrar-->
+
+        <div class="content-header">
+
+            <div class="logotipo">
+                <img src="img/logo sem fundo.png" alt="Logotipo Voar.com">
+            </div>
+
+            <button onclick="btnTeste()">
+                <u>Entrar / Cadastrar</u>
+            </button>
+
+        </div>
+    </header>
+
+    <!--Box de Busca-->
+
+    <section class="boxBuscar">
+
+        <div class="headerBoxBuscar">
+
+            <div class="idaVolta">
+                <button>Ida e Volta</button>
+            </div>
+
+            <div class="soIda">
+                <button>Só Ida</button>
+            </div>
+
+            <!--Subtitulo-->
+            <div class="subtitle">
+                <h2><span>Passagens</span> com preços imperdíveis !</h2>
+            </div>
+
+        </div>
+
+        <!--Main Caixa de Pesquisa Passagens-->
+        <div class="inputsPesquisa">
+
+            <!--Inputs ORIGEM E DESTINO-->
+            <div class="origemDestino">
+                <input type="text" placeholder="Origem">
+                <input type="text" placeholder="Destino">
+                <i class="bi bi-airplane-fill"></i>
+            </div>
+
+            <!--Inputs de Datas/IDA E VOLTA-->
+            <div class="datas">
+                <input type="text" placeholder="Inicio" id="inicioData">
+                <input type="text" placeholder="Fim" id="voltaData">
+                <i class="bi bi-calendar-fill"></i>
+            </div>
+
+            <!--Input de Quantidade de Passageiros-->
+            <div class="optionPassageiros">
+                <input type="text" placeholder="Viajantes">
+                <i class="bi bi-person-fill"></i>
+            </div>
+
+        </div>
+
+        <div class="btnBuscar">
+            <button onclick="btnTeste()">Buscar</button>
+        </div>
+    </section>
+
+    <!--Seção Conheça Destinos Incríveis -->
+    <section class="conhecaDestinos">
+
+        <!--Header Conheça Destinos Incríveis-->
+        <div class="conhecaHeader">
+            <h2><span>Conheça</span> Destinos Incríveis</h2>
+            <i class="bi bi-chevron-compact-right"></i>
+        </div>
+
+        <!--Content Conheça Destinos Incríveis-->
+        <div class="slidesConheca">
+
+            <div class="boxConheca">
+                <img src="img/Rio.jpg" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+                <button>
+                    <u>Explorar</u>
+                </button>
+            </div>
+
+            <div class="boxConheca">
+                <img src="img/maceio.jpg" alt="Maceió">
+                <h3>Maceió</h3>
+                <button>
+                    <u>Explorar</u>
+                </button>
+            </div>
+
+            <div class="boxConheca">
+                <img src="img/Jericoacoara.jpg" alt="Jericoacoara">
+                <h3>Jericoacoara</h3>
+                <button>
+                    <u>Explorar</u>
+                </button>
+            </div>
+
+            <div class="boxConheca">
+                <img src="img/gramados.jpg" alt="Gramados">
+                <h3>Gramados</h3>
+                <button>
+                    <u>Explorar</u>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SEÇÃO Pacotes Promocionais-->
+    <section class="pacotesPromocionais">
+
+        <div class="pacotesHeader">
+            <h2><span>Pacotes</span> Promocionais</h2>
+            <i class="bi bi-chevron-compact-right"></i>
+        </div>
+
+        <div class="contentPacotes">
+
+            <div class="boxPacotes">
+                <img src="img/Istambul.jpg" alt="Istambul - Turquia">
+                <h3>Istambul - Turquia</h3>
+
+                <div class="mainPacotes">
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill"></i>
+                        <p>ida: 10/11/2024</p>
+                    </div>
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill icon-volta"></i>
+                        <p>volta: 22/11/2024</p>
+                    </div>
+
+                    <div class="valorPacotes">
+                        <p>a partir de</p>
+                        <h2><span>R$</span> 8.392,00</h2>
+                    </div>
+
+                    <div class="btnPacotes">
+                        <button>selecionar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="boxPacotes">
+                <img src="img/Londres.jpg" alt="Londres - Inglaterra">
+                <h3>Londres - Inglaterra</h3>
+
+                <div class="mainPacotes">
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill"></i>
+                        <p>ida: 10/11/2024</p>
+                    </div>
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill icon-volta"></i>
+                        <p>volta: 22/11/2024</p>
+                    </div>
+
+                    <div class="valorPacotes">
+                        <p>a partir de</p>
+                        <h2><span>R$</span> 8.392,00</h2>
+                    </div>
+
+                    <div class="btnPacotes">
+                        <button>selecionar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="boxPacotes">
+                <img src="img/jerusalem.jpg" alt="Jerusalem - Israel">
+                <h3>Jerusalem - Israel</h3>
+
+                <div class="mainPacotes">
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill"></i>
+                        <p>ida: 10/11/2024</p>
+                    </div>
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill icon-volta"></i>
+                        <p>volta: 22/11/2024</p>
+                    </div>
+
+                    <div class="valorPacotes">
+                        <p>a partir de</p>
+                        <h2><span>R$</span> 8.392,00</h2>
+                    </div>
+
+                    <div class="btnPacotes">
+                        <button>selecionar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="boxPacotes">
+                <img src="img/athenas.jpg" alt="Athenas - Grécia">
+                <h3>Athenas - Grecia</h3>
+
+                <div class="mainPacotes">
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill"></i>
+                        <p>ida: 10/11/2024</p>
+                    </div>
+
+                    <div class="idavoltaPacotes">
+                        <i class="bi bi-send-fill icon-volta"></i>
+                        <p>volta: 22/11/2024</p>
+                    </div>
+
+                    <div class="valorPacotes">
+                        <p>a partir de</p>
+                        <h2><span>R$</span> 8.392,00</h2>
+                    </div>
+
+                    <div class="btnPacotes">
+                        <button>selecionar</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="rodape">
+
+            <div class="rodapeContent">
+                <h2>Voar.com</h2>
+                <p><u>Sobre Nós</u></p>
+                <p><u>Trabalhe Conosco</u></p>
+                <p><u>Seja um Franqueado</u></p>
+            </div>
+
+            <div class="rodapeContent">
+                <h2>Central de Atendimento</h2>
+                <p><u>Central de Ajuda</u></p>
+                <p><u>Suporte Pós-Venda</u></p>
+                <p><u>Central de Relacionamento ao Cliente</u></p>
+            </div>
+
+            <div class="rodapeContent">
+                <h2>Termos</h2>
+                <p><u>Condições Gerais</u></p>
+                <p><u>Política de Privacidade</u></p>
+                <p><u>Direitos Autorais</u></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

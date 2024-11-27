@@ -1,0 +1,397 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/*ICONES BOOTSTRAP*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Kantumruy Pro", sans-serif;
+    --font-title: "Oleo Script", serif;
+    --main-color: #18143C;
+    --second-color: #f8a101;
+    --cinza-color: #D9D9D9;
+    --preto-color: #1B1E20;
+}
+
+body {
+    background-color: var(--cinza-color);
+}
+
+/*Header*/
+.content-header {
+    background-color: var(--main-color);
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Logotipo Voar.com */
+    .logotipo img {
+        width: 60vh;
+    }
+
+    /* BTN - Login Entrar/Cadastrar */
+    button {
+        position: absolute;
+        right: 10vh;
+        top: 32vh;
+        background: none;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-family: var(--font-main);
+        font-weight: 480;
+        font-size: 18px;
+        font-style: italic;
+        cursor: pointer;
+    }
+}
+
+.boxBuscar {
+    margin: 3rem auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 75%;
+    box-shadow: 2px 2px 15px var(--preto-color);
+
+    /*Caixa de Pesquisa de Passagens*/
+    .headerBoxBuscar {
+        display: flex;
+        padding: 10px;
+    }
+
+    /*BTN Opção de Só Ida/ Ida e Volta */
+    button {
+        margin-right: 20px;
+        background-color: var(--main-color);
+        width: 7.50rem;
+        height: 2.50rem;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        font-family: var(--font-main);
+        font-size: 18px;
+        font-weight: 480;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /*BTN Não selecionado*/
+    .soIda button {
+        background-color: #D9D9D9;
+        color: #1B1E20;
+    }
+
+    /*Subtítulo Header*/
+    .subtitle {
+        margin-left: 6rem;
+        font-family: var(--font-main);
+        font-size: bold;
+        font-style: italic;
+        color: var(--main-color);
+    }
+
+    .subtitle span {
+        color: var(--second-color);
+    }
+}
+
+/* SEÇÃO Main Caixa de Pesquisa Passagens*/
+.inputsPesquisa {
+    display: flex;
+    margin-top: 2.50rem;
+    margin-left: 1.25rem;
+
+    /*Inputs*/
+    input {
+        padding: 10px;
+        width: 11.25rem;
+        height: 3.13rem;
+        background-color: var(--cinza-color);
+        font-family: var(--font-main);
+        font-weight: bold;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px var(--preto-color);
+    }
+
+    /*Icone Origem e Destino*/
+    .origemDestino i {
+        font-size: 25px;
+        margin-left: 10px;
+        color: var(--main-color);
+    }
+
+    /*Input Datas*/
+    .datas {
+        margin-left: 30px;
+
+        input {
+            width: 9rem;
+        }
+
+        i {
+            margin-left: 10px;
+            font-size: 20px;
+            color: var(--main-color);
+        }
+    }
+
+    /*Input Quant. Passageiros*/
+    .optionPassageiros {
+        margin-left: 30px;
+
+        input {
+            width: 7rem;
+
+        }
+
+        i {
+            margin-left: 10px;
+            font-size: 26px;
+            color: var(--main-color);
+        }
+    }
+}
+
+/*BTN Buscar Passagens*/
+.btnBuscar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    button {
+        width: 21.88rem;
+        color: var(--second-color);
+        font-weight: bold;
+        font-style: italic;
+        box-shadow: 4px 4px 8px var(--preto-color);
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: translateY(6px);
+    }
+}
+
+/*SEÇÃO CONHEÇA DESTINOS*/
+
+/*Header Conheça Destinos*/
+.conhecaHeader {
+    display: flex;
+
+    h2 {
+        font-family: var(--font-main);
+        font-style: italic;
+        color: var(--main-color);
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    span {
+        color: var(--second-color);
+    }
+
+    i {
+        font-size: 25px;
+        color: var(--second-color);
+        margin-top: 30px;
+    }
+}
+
+/*Content Conheça Destinos*/
+.slidesConheca {
+    display: flex;
+}
+
+.boxConheca {
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: var(--main-color);
+    width: 280px;
+    text-align: center;
+    font-family: var(--font-main);
+    border-radius: 20px;
+
+    h3 {
+        margin-top: 18px;
+        font-style: italic;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    img {
+        width: 280px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    button {
+        margin: 20px;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        color: var(--second-color);
+        font-style: italic;
+        cursor: pointer;
+    }
+}
+
+/*SEÇÃO PACOTES PROMOCIONAIS*/
+
+/*Header Pacotes Promocionais*/
+.pacotesHeader {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+
+    h2 {
+        font-family: var(--font-main);
+        font-style: italic;
+        color: var(--main-color);
+    }
+
+    span {
+        color: var(--second-color);
+
+    }
+
+    i {
+        font-size: 25px;
+        color: var(--second-color);
+        margin-top: 1px;
+    }
+}
+
+/*Content Pacotes Promocionais*/
+.contentPacotes {
+    display: flex;
+}
+
+.boxPacotes {
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: var(--main-color);
+    width: 280px;
+    border-radius: 20px;
+
+    img {
+        width: 280px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        margin-top: 18px;
+        font-family: var(--font-main);
+        font-style: italic;
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.idavoltaPacotes {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 18px;
+
+    i {
+        font-size: 22px;
+        color: var(--second-color);
+    }
+
+    p {
+        font-family: var(--font-main);
+        font-size: 20px;
+        font-style: italic;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .icon-volta {
+        transform: rotate(180deg);
+    }
+}
+
+.valorPacotes {
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-main);
+    font-style: italic;
+
+    p {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    h2 {
+        color: var(--second-color);
+
+    }
+
+    span {
+        font-size: 16px;
+
+    }
+}
+
+.btnPacotes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    button {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        background-color: var(--second-color);
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-style: italic;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 4px 4px 8px var(--preto-color);
+    }
+
+    button:active {
+        transform: translateY(6px);
+    }
+}
+
+/*RODAPÉ - FOOTER */
+.rodape {
+    background-color: var(--main-color);
+    margin-top: 50px;
+    border-radius: 50px 50px 0px 0px;
+    font-family: var(--font-main);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+    .rodapeContent {
+        margin: 30px;
+    }
+
+    .rodapeContent h2 {
+        font-style: italic;
+        font-weight: 480;
+    }
+
+    .rodapeContent p {
+        margin-top: 8px;
+        cursor: pointer;
+    }
+}
