@@ -68,7 +68,7 @@ body {
 
     /*BTN Opção de Só Ida/ Ida e Volta */
     button {
-        margin-right: 20px;
+        margin-right: 1.25rem;
         background-color: var(--main-color);
         width: 7.50rem;
         height: 2.50rem;
@@ -102,6 +102,7 @@ body {
     }
 }
 
+
 /* SEÇÃO Main Caixa de Pesquisa Passagens*/
 .inputsPesquisa {
     display: flex;
@@ -124,14 +125,14 @@ body {
 
     /*Icone Origem e Destino*/
     .origemDestino i {
-        font-size: 25px;
+        font-size: 1.56rem;
         margin-left: 10px;
         color: var(--main-color);
     }
 
     /*Input Datas*/
     .datas {
-        margin-left: 30px;
+        margin-left: 1.88rem;
 
         input {
             width: 9rem;
@@ -146,7 +147,7 @@ body {
 
     /*Input Quant. Passageiros*/
     .optionPassageiros {
-        margin-left: 30px;
+        margin-left: 1.88rem;
 
         input {
             width: 7rem;
@@ -165,8 +166,8 @@ body {
 .btnBuscar {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.88rem;
+    margin-bottom: 1.25rem;
 
     button {
         width: 21.88rem;
@@ -192,8 +193,8 @@ body {
         font-family: var(--font-main);
         font-style: italic;
         color: var(--main-color);
-        margin-top: 30px;
-        margin-left: 30px;
+        margin-top: 1.88rem;
+        margin-left: 1.88rem;
     }
 
     span {
@@ -203,7 +204,7 @@ body {
     i {
         font-size: 25px;
         color: var(--second-color);
-        margin-top: 30px;
+        margin-top: 1.88rem;
     }
 }
 
@@ -213,29 +214,28 @@ body {
 }
 
 .boxConheca {
-    margin-top: 30px;
-    margin-left: 50px;
+    margin: 1.88rem;
     background-color: var(--main-color);
-    width: 280px;
+    width: 17.50rem;
     text-align: center;
     font-family: var(--font-main);
     border-radius: 20px;
 
     h3 {
-        margin-top: 18px;
+        margin-top: 1.13rem;
         font-style: italic;
         font-size: 25px;
         color: #fff;
     }
 
     img {
-        width: 280px;
-        height: 350px;
-        border-radius: 20px;
+        width: 17.50rem;
+        height: 21.88rem;
+        border-radius: 1.25rem;
     }
 
     button {
-        margin: 20px;
+        margin: 1.25rem;
         background: none;
         outline: none;
         border: none;
@@ -251,8 +251,8 @@ body {
 /*Header Pacotes Promocionais*/
 .pacotesHeader {
     display: flex;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 1.88rem;
+    margin-left: 1.88rem;
 
     h2 {
         font-family: var(--font-main);
@@ -278,15 +278,14 @@ body {
 }
 
 .boxPacotes {
-    margin-top: 30px;
-    margin-left: 50px;
+    margin: 1.88rem;
     background-color: var(--main-color);
-    width: 280px;
+    width: 17.50rem;
     border-radius: 20px;
 
     img {
-        width: 280px;
-        height: 350px;
+        width: 17.50rem;
+        height: 21.88rem;
         border-radius: 20px;
     }
 
@@ -302,8 +301,8 @@ body {
 
 .idavoltaPacotes {
     display: flex;
-    margin-left: 30px;
-    margin-top: 18px;
+    margin-left: 1.88rem;
+    margin-top: 1.13rem;
 
     i {
         font-size: 22px;
@@ -312,7 +311,7 @@ body {
 
     p {
         font-family: var(--font-main);
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: italic;
         color: #fff;
         margin-left: 10px;
@@ -325,7 +324,7 @@ body {
 
 .valorPacotes {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     font-family: var(--font-main);
     font-style: italic;
 
@@ -348,12 +347,12 @@ body {
 .btnPacotes {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 
     button {
-        width: 200px;
-        height: 40px;
+        width: 12.50rem;
+        height: 2.50rem;
         font-size: 18px;
         background-color: var(--second-color);
         border: none;
@@ -374,7 +373,7 @@ body {
 /*RODAPÉ - FOOTER */
 .rodape {
     background-color: var(--main-color);
-    margin-top: 50px;
+    margin-top: 3.13rem;
     border-radius: 50px 50px 0px 0px;
     font-family: var(--font-main);
     color: #fff;
@@ -382,7 +381,7 @@ body {
     justify-content: space-around;
 
     .rodapeContent {
-        margin: 30px;
+        margin: 1.88rem;
     }
 
     .rodapeContent h2 {
@@ -393,5 +392,105 @@ body {
     .rodapeContent p {
         margin-top: 8px;
         cursor: pointer;
+    }
+}
+
+/*RESPONSIVIDADE*/
+
+/* CONTENT-HEADER*/
+@media(max-width:430px) {
+    .content-header {
+        height: 30vh;
+
+        .logotipo img {
+            width: 40vh;
+        }
+
+        button {
+            top: 26vh;
+            right: 3vh;
+            font-size: 12px;
+        }
+    }
+}
+
+/*HEADER BOX BUSCAR*/
+@media(max-width:430px) {
+    .boxBuscar {
+        margin: 2rem auto;
+
+        .headerBoxBuscar {
+            padding: 4px;
+        }
+
+        .subtitle {
+            display: none;
+        }
+    }
+}
+
+/* INPUTS BOX BUSCAR*/
+@media(max-width:430px) {
+    .inputsPesquisa {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 3rem;
+
+        .origemDestino input {
+            margin-left: 1.25rem;
+            margin-top: 12px;
+        }
+
+        .datas {
+            margin-left: 1.25rem;
+            margin-top: 1.88rem;
+        }
+
+        .datas input {
+            width: 11.25rem;
+            margin-top: 12px;
+        }
+
+        .optionPassageiros {
+            margin-left: 1.25rem;
+        }
+
+        .optionPassageiros input {
+            width: 11.25rem;
+            margin-top: 1.88rem;
+        }
+    }
+}
+
+/*BTN Buscar Passagens*/
+@media(max-width: 430px) {
+    .btnBuscar button {
+        width: 12rem;
+    }
+}
+
+/*SEÇÃO Conheça Destinos*/
+@media(max-width: 430px){
+    .conhecaDestinos{
+        overflow-y: auto;
+    }
+}
+
+/*SEÇÃO PACOTES PROMOCIONAIS*/
+
+@media (max-width: 430px){
+    .pacotesPromocionais{
+        overflow-y: auto;
+    }
+}
+
+/*FOOTER RODAPÉ */
+
+@media(max-width: 430px){
+    .rodape{
+        display: block;
+        margin-top: 3vh;
+        padding: 0.80rem;
     }
 }
