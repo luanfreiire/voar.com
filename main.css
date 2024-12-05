@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Oleo+Script:wght@400;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /*ICONES BOOTSTRAP*/
 
@@ -32,7 +33,7 @@ body {
 
     /* Logotipo Voar.com */
     .logotipo img {
-        width: 60vh;
+        width: 45vh;
     }
 
     /* BTN - Login Entrar/Cadastrar */
@@ -403,7 +404,7 @@ body {
         height: 30vh;
 
         .logotipo img {
-            width: 40vh;
+            width: 25vh;
         }
 
         button {
